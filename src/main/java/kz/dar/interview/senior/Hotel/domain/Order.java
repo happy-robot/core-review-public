@@ -21,6 +21,8 @@ public class Order {
     @NotNull
     private long userId;
     @NotNull
+    private String comment;
+    @NotNull
     private LocalDate fromDate; // NOTE: inclusive
     @NotNull
     private LocalDate toDate; // NOTE: inclusive

@@ -18,6 +18,6 @@ public class OrderServiceTest {
 
     @Test
     void whenUserDoesNotExists_ThenFail() {
-        assertThrows(RuntimeException.class, () -> orderService.create(new Order(1, 1, 1, LocalDate.now(), LocalDate.now())));
+        assertThrows(RuntimeException.class, () -> orderService.create(new Order(1, 1, 1, "test", LocalDate.now(), LocalDate.now())));
     }
 }
